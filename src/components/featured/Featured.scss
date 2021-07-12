@@ -30,6 +30,11 @@
     justify-content: center;
     background-position: top;
     background-size: cover;
+    animation: zoomOut 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 forwards;
+
+    &:hover {
+      animation: zoomIn 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 forwards;
+    }
 
     @include respondMax("tablet") {
       grid-row: unset !important;

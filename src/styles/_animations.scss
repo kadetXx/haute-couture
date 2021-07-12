@@ -1,0 +1,32 @@
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    background-size: 100%;
+  }
+
+  to {
+    background-size: 110%;
+  }
+}
+
+
+@keyframes zoomOut {
+  from {
+    background-size: 110%;
+  }
+
+  to {
+    background-size: 100%;
+  }
+}
