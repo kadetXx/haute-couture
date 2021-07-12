@@ -3,7 +3,7 @@ import './Header.scss'
 const Header = () => {
   return (
     <header>
-      <div className="logo">Klosette</div>
+      <div className="logo">Haute Couture</div>
 
       <button className="hamburger">
         <span className="hamburger__bar"></span>
