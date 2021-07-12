@@ -6,8 +6,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(#171616, 0.97);
 
   &__inner {
