@@ -1,0 +1,16 @@
+@import url("http://fonts.cdnfonts.com/css/marsek");
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+* {
+  font-family: 'Marsek', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #171616;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
