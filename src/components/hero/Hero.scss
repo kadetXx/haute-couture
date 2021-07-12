@@ -1,11 +1,15 @@
+@import "../../styles/breakpoints";
+
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  grid-template-columns: 2fr 1.5fr;
   overflow-x: hidden;
 
   &__section--text {
-    flex-grow: 1;
+    // flex-grow: 1;
+    margin-top: 25%;
   }
 
   &__section--model {
@@ -13,14 +17,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    flex: 1 0.5 auto;
+    flex: 1 2 auto;
   }
 
   &__scroll {
     position: absolute;
     right: -6vw;
-    bottom: 0;
-    // top: -2rem;
+    bottom: 12%;
     display: flex;
     align-items: center;
     transform: rotate(90deg);
@@ -32,7 +35,7 @@
   }
 
   &__scroll-icon {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) scale(0.8);
     position: relative;
     left: 2rem;
   }
@@ -42,9 +45,13 @@
     font-size: 3rem;
     font-weight: 500;
 
-    line-height: 1.5;
+    line-height: 1.3;
     margin: 0;
     color: #ffffff;
+
+    @include respondMax("sm-desktop") {
+      font-size: 2.3rem;
+    }
   }
 
   &__title {
@@ -54,6 +61,7 @@
 
   &__crosses {
     margin-top: 4rem;
+    width: 150px;
   }
 
   &__model {
@@ -64,10 +72,10 @@
 
   &__model-label {
     position: absolute;
-    height: 54px;
-    width: 80%;
+    height: 45px;
+    width: 75%;
     margin: 0 20%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     display: grid;
     place-items: center;
     margin: auto;
