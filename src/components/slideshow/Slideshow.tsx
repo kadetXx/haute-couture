@@ -1,4 +1,3 @@
-import React from "react";
 import "./Slideshow.scss";
 
 import TitleBlock from "../titleBlock/TitleBlock";

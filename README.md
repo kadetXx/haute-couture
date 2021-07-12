@@ -1,4 +1,4 @@
-# Klosette
+# Haute Couture
 
 An online clothes store.  
 ## Available Scripts

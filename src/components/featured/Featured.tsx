@@ -1,4 +1,3 @@
-import React from "react";
 import "./Featured.scss";
 
 import TitleBlock from "../titleBlock/TitleBlock";

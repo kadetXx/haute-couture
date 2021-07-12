@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Banner.scss";
 
 import Popup from '../popup/Popup'
@@ -27,7 +27,7 @@ const Banner = () => {
         ROCK YOUR STYLE, <br /> BEING BORING ISN’T <br /> ALLOWED HERE
       </h3>
       <div className="banner__cta">
-        <button className="btn" onClick={togglePopup}>Start Now</button>
+        <button className="btn" onClick={togglePopup}>Join Us</button>
       </div>
 
       {showPopup && (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Header.scss";
 
 const Header = () => {
@@ -11,18 +11,29 @@ const Header = () => {
       <nav>
         <ul className={showMenu ? "menu" : "menu menu--hidden"}>
           <li className="menu__item">
-            <a href="#" className="menu__link">
+            <a
+              href="https://github.com/kadetXx/haute-couture"
+              target="_blank"
+              className="menu__link"
+            >
               TW.
             </a>
           </li>
           <li className="menu__item">
-            <a href="#" className="menu__link">
+            <a
+              href="https://twitter.com/kadetXx"
+              target="_blank"
+              className="menu__link"
+            >
               GH.
             </a>
           </li>
         </ul>
 
-        <button className={showMenu ? "hamburger hamburger--expanded" : "hamburger"} onClick={() => setShowMenu(!showMenu)}>
+        <button
+          className={showMenu ? "hamburger hamburger--expanded" : "hamburger"}
+          onClick={() => setShowMenu(!showMenu)}
+        >
           <span className="hamburger__bar"></span>
           <span className="hamburger__bar"></span>
         </button>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Header, Footer } from "./layout";
 import { Hero, Featured, Slideshow, Banner } from "./components";
 
