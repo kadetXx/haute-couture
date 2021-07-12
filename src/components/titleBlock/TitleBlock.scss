@@ -1,0 +1,18 @@
+.titleblock {
+  position: relative;
+
+  &__subheading {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #6F6F6F;
+    margin: 0;
+  }
+
+  &__heading {
+    font-family: 'Helvetica 45 Light', sans-serif;
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin: 0.5rem 0 0;
+  }
+}
