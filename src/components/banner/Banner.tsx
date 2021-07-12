@@ -27,7 +27,7 @@ const Banner = () => {
         ROCK YOUR STYLE, <br /> BEING BORING ISN’T <br /> ALLOWED HERE
       </h3>
       <div className="banner__cta">
-        <button className="btn" onClick={togglePopup}>Join Us</button>
+        <button className="btn" onClick={togglePopup}>We're Hiring!</button>
       </div>
 
       {showPopup && (
