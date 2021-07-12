@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import { ReactComponent as Arrow } from "../../assets/svgs/scroll-arrow.svg";
 import { ReactComponent as Crosses } from "../../assets/svgs/crosses.svg";
-import Model from "../../assets/images/klosette-model.png";
+import Model from "../../assets/images/couture-model.png";
 
 const Hero = () => {
   return (

@@ -1,0 +1,58 @@
+@import "../../styles/breakpoints";
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(#171616, 0.97);
+
+  &__inner {
+    position: relative;
+    width: 500px;
+    padding: 2rem;
+    border: 1px solid #FFFFFF;
+    background-color: #171616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include respondMax('tablet') {
+      width: 80%;
+    }
+
+    @include respondMax('mobile') {
+      width: 90%;
+    }
+  }
+
+  &__close {
+    all: unset;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+
+  &__icon-container {
+    color: #FFFFFF;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    font-size: 5.5rem;
+  }
+
+  &__content {
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 1.5;
+  }
+}

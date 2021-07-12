@@ -2,7 +2,7 @@
 
 .banner {
   position: relative;
-  height: 550px;
+  height: 570px;
   margin-top: 12rem;
   border-radius: 8px;
   display: flex;
@@ -31,5 +31,9 @@
     line-height: 1.5;
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
+  }
+
+  &__cta {
+    margin-top: 2rem;
   }
 }
