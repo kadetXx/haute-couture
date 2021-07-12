@@ -1,5 +1,15 @@
+@import "../../styles/breakpoints";
+
 .titleblock {
   position: relative;
+
+  @include respondMax("tablet") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   &__subheading {
     font-size: 0.8rem;
@@ -14,5 +24,9 @@
     color: #FFFFFF;
     font-weight: 200;
     margin: 0.5rem 0 0;
+
+    @include respondMax("sm-tablet") {
+      font-size: 1.3rem;
+    }
   }
 }

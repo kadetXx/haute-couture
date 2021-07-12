@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 header {
   display: flex;
   align-items: center;
@@ -6,6 +8,10 @@ header {
   .logo {
     font-size: 1rem;
     color: #ffffff;
+
+    @include respondMax('sm-tablet') {
+      font-size: 0.9rem;
+    }
   }
 
   .hamburger {
@@ -19,6 +25,10 @@ header {
     background: #171616;
     border: none;
     width: 40px;
+
+    @include respondMax('sm-tablet') {
+      width: 35px;
+    }
   }
 
   .hamburger__bar {
@@ -26,6 +36,8 @@ header {
     height: 2px;
     background-color: #ffffff;
     margin: 0.3rem 0;
+
+    width: 30px;
   }
 
   .hamburger--expanded {
@@ -66,6 +78,10 @@ header {
 
   .menu__item {
     margin-right: 1rem;
+
+    @include respondMax('sm-tablet') {
+      margin-right: 0.7rem;
+    }
   }
 
   .menu__link {
@@ -74,6 +90,10 @@ header {
     text-decoration-color: #6a6a6a;
     text-decoration-style: wavy;
     transition: color ease-in 0.2s;
+
+    @include respondMax('sm-tablet') {
+      font-size: 0.75rem;
+    }
 
     &:hover {
       color: #6a6a6a;

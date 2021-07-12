@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 .slideshow {
   position: relative;
   margin-top: 6rem;
@@ -24,6 +26,10 @@
     justify-content: center;
     align-items: flex-end;
 
+    @include respondMax("tablet") {
+      width: 320px;
+    }
+
     &:not(:last-of-type) {
       margin-right: 1.5rem;
     }
@@ -37,5 +43,10 @@
 
   &__cta {
     margin: 4rem 0 0;
+
+    @include respondMax("tablet") {
+      display: grid;
+      place-items: center;
+    }
   }
 }

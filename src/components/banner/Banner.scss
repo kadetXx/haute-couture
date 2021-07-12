@@ -13,6 +13,11 @@
   background-position: center;
   background-size: cover;
 
+  @include respondMax("sm-tablet") {
+    height: 500px;
+    margin-top: 8rem;
+  }
+
   &__title,
   &__subtitle {
     font-size: 3rem;
@@ -24,6 +29,10 @@
 
     @include respondMax("sm-desktop") {
       font-size: 2.3rem;
+    }
+
+    @include respondMax("sm-tablet") {
+      font-size: 1.5rem;
     }
   }
 

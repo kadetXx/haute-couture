@@ -1,5 +1,11 @@
+@import "../../styles/breakpoints";
+
 .featured {
   margin-top: 4rem;
+
+  @include respondMax("tablet") {
+    margin-top: 6rem;
+  }
 
   &__grid {
     margin-top: 4rem;
@@ -8,6 +14,11 @@
     grid-template-rows: repeat(2, 420px);
     column-gap: 1.5rem;
     row-gap: 1.5rem;
+
+    @include respondMax("tablet") {
+      grid-template-columns: 1fr;
+      grid-template-rows: unset;
+    }
   }
 
   &__item {
@@ -20,37 +31,52 @@
     background-position: top;
     background-size: cover;
 
+    @include respondMax("tablet") {
+      grid-row: unset !important;
+      height: 450px;
+      background-position: center;
+    }
+
+    &:nth-child(1) {
+      grid-row: 1/3;
+      align-items: center;
+      background-image: url("../../assets/images/featured-one.png");
+    }
+
+    &:nth-child(2) {
+      grid-row: 1/2;
+      align-items: flex-end;
+      background-image: url("../../assets/images/featured-two.png");
+    }
+
+    &:nth-child(3) {
+      grid-row: 1/3;
+      align-items: center;
+      background-image: url("../../assets/images/featured-three.png");
+    }
+
+    &:nth-child(4) {
+      grid-row: 2/3;
+      align-items: flex-end;
+      background-image: url("../../assets/images/featured-four.png");
+    }
+
     &-label {
       font-size: 1.7rem;
       margin: 0;
+
+      @include respondMax("tablet") {
+        font-size: 1.2rem;
+      }
     }
-  }
-
-  &__item:nth-child(1) {
-    grid-row: 1/3;
-    align-items: center;
-    background-image: url("../../assets/images/featured-one.png");
-  }
-
-  &__item:nth-child(2) {
-    grid-row: 1/2;
-    align-items: flex-end;
-    background-image: url("../../assets/images/featured-two.png");
-  }
-
-  &__item:nth-child(3) {
-    grid-row: 1/3;
-    align-items: center;
-    background-image: url("../../assets/images/featured-three.png");
-  }
-
-  &__item:nth-child(4) {
-    grid-row: 2/3;
-    align-items: flex-end;
-    background-image: url("../../assets/images/featured-four.png");
   }
 
   &__cta {
     margin: 4rem 0 0;
+
+    @include respondMax("tablet") {
+      display: grid;
+      place-items: center;
+    }
   }
 }

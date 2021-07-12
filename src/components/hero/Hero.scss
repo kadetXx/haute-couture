@@ -5,8 +5,17 @@
   grid-template-columns: 2fr 1.5fr;
   overflow-x: hidden;
 
+  @include respondMax('lg-tablet') {
+    grid-template-columns: 1fr;
+  }
+
   &__section--text {
     margin-top: 25%;
+
+    @include respondMax('lg-tablet') {
+      margin-top: 6rem;
+      margin-bottom: 4rem;
+    }
   }
 
   &__section--model {
@@ -18,17 +27,25 @@
 
   &__scroll {
     position: absolute;
-    right: -6vw;
-    bottom: 15%;
+    right: -5rem;
+    top: 15%;
     display: flex;
     align-items: center;
     transform: rotate(90deg);
+
+    @include respondMax('sm-tablet') {
+      right: -6rem;
+    }
   }
 
   &__scroll-text {
     margin: 0;
     font-size: 0.9rem;
     color: #6a6a6a;
+
+    @include respondMax('tablet') {
+      font-size: 0.75rem;
+    }
   }
 
   &__scroll-icon {
@@ -49,6 +66,10 @@
     @include respondMax("sm-desktop") {
       font-size: 2.3rem;
     }
+
+    @include respondMax('sm-tablet') {
+      font-size: 1.5rem;
+    }
   }
 
   &__title {
@@ -65,28 +86,55 @@
     max-width: 100%;
     width: 100%;
     z-index: 2;
+
+    @include respondMax('lg-tablet') {
+      max-width: 70%;
+    }
+
+    @include respondMax('mobile') {
+      max-width: 100%;
+    }
   }
 
   &__model-label {
     position: absolute;
     height: 45px;
     width: 75%;
-    margin: 0 20%;
     background-color: #ffffff;
     display: grid;
     place-items: center;
     margin: auto;
     color: #000000;
 
+    @include respondMax('sm-tablet') {
+      height: 40px;
+    }
+
+    @include respondMax('mobile') {
+      width: 85%;
+    }
+
     &--forward {
       z-index: 3;
       top: 30%;
       font-size: 0.95rem;
+
+      @include respondMax('sm-tablet') {
+        font-size: 0.8rem;
+      }
     }
 
     &--behind {
       z-index: 1;
       top: 40%;
+
+      @include respondMax('sm-tablet') {
+        top: 42%;
+      }
+
+      @include respondMax('mobile') {
+        top: 40%;
+      }
     }
   }
 }

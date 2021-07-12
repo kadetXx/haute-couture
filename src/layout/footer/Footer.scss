@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 footer {
   display: grid;
   place-items: center;
@@ -7,5 +9,9 @@ footer {
     text-align: center;
     margin: 0;
     color: #6a6a6a;
+
+    @include respondMax('sm-tablet') {
+      font-size: 0.75rem;
+    }
   }
 }
