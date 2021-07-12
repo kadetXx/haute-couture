@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import './Footer.scss'
 
 const Footer = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const year = new Date().getFullYear();
 
-export default Footer
+  return (
+    <footer>
+      <p className="copyright-text">&copy; Copyright {year}, Klosette </p>
+    </footer>
+  );
+};
+
+export default Footer;

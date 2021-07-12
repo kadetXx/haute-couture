@@ -1,0 +1,11 @@
+footer {
+  display: grid;
+  place-items: center;
+  margin: 5rem 0 0;
+
+  .copyright-text {
+    text-align: center;
+    margin: 0;
+    color: #6a6a6a;
+  }
+}

@@ -9,8 +9,8 @@ const App = () => {
       <Hero />
       <Featured />
       <Slideshow />
-      <Footer />
       <Banner />
+      <Footer />
     </div>
   );
 };
