@@ -14,6 +14,7 @@ const Header = () => {
             <a
               href="https://github.com/kadetXx/haute-couture"
               target="_blank"
+              rel="noreferrer noopener"
               className="menu__link"
             >
               TW.
@@ -23,6 +24,7 @@ const Header = () => {
             <a
               href="https://twitter.com/kadetXx"
               target="_blank"
+              rel="noreferrer noopener"
               className="menu__link"
             >
               GH.
