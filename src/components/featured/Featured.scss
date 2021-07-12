@@ -5,7 +5,7 @@
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 400px);
+    grid-template-rows: repeat(2, 420px);
     column-gap: 1.5rem;
     row-gap: 1.5rem;
   }
@@ -17,9 +17,12 @@
     padding: 1.5rem;
     display: flex;
     justify-content: center;
+    background-position: top;
+    background-size: cover;
 
-    &-text {
+    &-label {
       font-size: 1.7rem;
+      margin: 0;
     }
   }
 
@@ -45,5 +48,9 @@
     grid-row: 2/3;
     align-items: flex-end;
     background-image: url("../../assets/images/featured-four.png");
+  }
+
+  &__cta {
+    margin: 4rem 0 0;
   }
 }

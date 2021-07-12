@@ -1,0 +1,35 @@
+@import "../../styles/breakpoints";
+
+.banner {
+  position: relative;
+  height: 550px;
+  margin-top: 12rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/images/banner-bg.png');
+  background-position: center;
+  background-size: cover;
+
+  &__title,
+  &__subtitle {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+
+    @include respondMax("sm-desktop") {
+      font-size: 2.3rem;
+    }
+  }
+
+  &__title {
+    line-height: 1.5;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+  }
+}

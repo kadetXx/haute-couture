@@ -1,0 +1,41 @@
+.slideshow {
+  position: relative;
+  margin-top: 6rem;
+
+  &__slider {
+    display: flex;
+    align-items: stretch;
+    overflow: auto;
+    margin-top: 4rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    height: 425px;
+    width: 300px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+
+    &-label {
+      font-size: 1.7rem;
+      margin: 0;
+      color: #ffffff;
+    }
+  }
+
+  &__cta {
+    margin: 4rem 0 0;
+  }
+}
